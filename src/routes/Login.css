@@ -1,0 +1,82 @@
+.container-bg {
+    background-image: url('../../public/blue-background.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-login {
+    background-color: black;
+    border-radius: 2em;
+    border: 1px rgb(81, 213, 247) solid;
+    color: rgb(81, 213, 247);
+    height: 35em;
+    width: 30em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-titulo {
+    font-size: 3em;
+    margin-bottom: 1em;
+}
+
+.form-group {
+    margin-bottom: 1em;
+}
+
+.form-campo-nome {
+    font-size: 1.5em;
+    display: block;
+}
+
+.form-campo {
+    height: 2.5em;
+    width: 20em;
+    padding: 1em;
+}
+
+.form-botao {
+    background-color: black;
+    border: 1px solid rgb(81, 213, 247);
+    border-radius: 10em;
+    color: rgb(81, 213, 247);
+    height: 2.5em;
+    width: 10em;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    cursor: pointer;
+}
+
+.form-botao:hover {
+    color: #ffffff;
+    transition: 1s;
+    animation: alternate infinite 3s colorChange linear;
+}
+
+.linkCadastro {
+    color: #ffffff;
+}
+
+@keyframes colorChange {
+    0% {
+        background-color: rgb(0, 0, 0);
+    }
+    25% {
+        background-color: rgb(0, 90, 112);
+    }
+    50% { 
+        background-color: rgb(0, 40, 92);    
+    }
+    100% {
+        background-color: rgb(0, 80, 133);
+    }
+}
+
+
