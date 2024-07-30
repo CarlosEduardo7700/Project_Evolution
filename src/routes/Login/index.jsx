@@ -1,12 +1,21 @@
 import React from 'react'
 import styles from './Login.module.css'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 export default function Login() {
+
+  const navigate = useNavigate()
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+
+    navigate('/home')
+  }
+
   return (
     <div className={styles.containerBackground}>
 
-        <form className={styles.containerForm}>
+        <form className={styles.containerForm} onSubmit={handleSubmit}>
           
           <h1 className={styles.formTitle}>Login</h1>
           
